@@ -1,0 +1,179 @@
+2018-10-28 20:56:32.553117	Reading training Dataset
+2018-10-28 20:56:32.608264	Reading development Dataset
+2018-10-28 20:56:32.623806	Reading testing Dataset
+2018-10-28 20:56:32.643358	Split the training, development and testing dataset into its corresponding feature vectors and class labels
+2018-10-28 20:56:32.649373	Combining feature vector Datasets
+2018-10-28 20:56:32.653885	Combining class label Datasets
+2018-10-28 20:56:32.656893	Encoding feature vector dataset
+
+We first separate the feature vectors and class labels separately.
+We convert the continous feature vectors into categorical values. Eg: Hours per week is split into Low, Medium and High.
+After conversion we use pandas get_dummies function to convert all the categorical feature vectors into binary feature vectors.
+There are 96 features.
+
+2018-10-28 20:57:18.924057	Encoding class label dataset
+2018-10-28 20:57:18.924057	Income: >50K:1, <=50K:-1
+2018-10-28 20:57:18.933080	Split the combined feature vector dataset into its corresponding training, development and testing datasets
+2018-10-28 20:57:18.937091	Split the combined class label dataset into its corresponding training, development and testing datasets
+2018-10-28 20:57:18.970179	Standard Perceptron Algorithm
+2018-10-28 20:57:20.908398	Plotting learning curve for Perceptron
+2018-10-28 20:57:23.006631	Plotting accuracy curve for Perceptron Training Data
+2018-10-28 20:57:24.303576	Plotting accuracy curve for Perceptron Development Data
+2018-10-28 20:57:25.589708	Plotting accuracy curve for Perceptron Testing Data
+
+Training Accuracy = 74.83
+Development Accuracy = 66.71
+Test Accuracy = 67.51
+
+2018-10-28 20:57:26.592373	Passive Aggressive Algorithm
+2018-10-28 20:57:30.112505	Plotting learning curve for Passive Aggressive
+2018-10-28 20:57:31.495485	Plotting accuracy curve for Passive Aggressive Training Data
+2018-10-28 20:57:32.494639	Plotting accuracy curve for Passive Aggressive Development Data
+2018-10-28 20:57:33.397538	Plotting accuracy curve for Passive Aggressive Testing Data
+
+Training Accuracy = 73.58
+Development Accuracy = 83.29
+Test Accuracy = 81.21
+
+
+Comparison of Online Learning curves for Perceptron and Passive Aggressive
+Perceptron at its 1st iteration has 7600 mistakes, 2nd iteration 6700 mistakes and so on. Passive Aggressive at its 1st iteration has 7700 mistakes, 2nd iteration 7000 mistakes and so on. Therefore Perceptron Algorithm learns faster when compared to Passive aggressive for few iterations.
+
+Comparison of Accuracy Curves for Perceptron and Passive Aggressive
+The accuracy curve for training data of perceptron is higher compared to that of passive aggressive for every iteration. But for development and test data passive aggressive has an increase in the accuracy for every iteration. But for perceptron there is an increase in the accuracies and a sharp drop in accuracy when number of iterations increases.
+
+2018-10-28 20:57:34.377642	Average Perceptron Naive Algorithm
+
+Execution time for Average Perceptron Naive Algorithm = 1.912527
+
+Training Accuracy = 74.83
+Development Accuracy = 82.63
+Test Accuracy = 81.35
+
+2018-10-28 20:57:36.322253	Average Perceptron Hal Algorithm
+
+Execution time for Average Perceptron Hal Algorithm = 3.121908
+
+Training Accuracy = 74.95
+Development Accuracy = 83.36
+Test Accuracy = 81.45
+
+
+Compare Accuracies for Perceptron and Average Perceptron
+We notice that the accuracies for training, development and test data is higher for either of the Average Perceptron implementation when compared to Standard Perceptron. But the accuracies for training, development and test data Average Perceptron Hal implementation is higher compared to the Naive Algorithm.
+
+2018-10-28 20:57:39.477251	Standard Perceptron General Learning Algorithm
+
+2018-10-28 20:57:39.477251	Number of examples = 5000
+2018-10-28 20:57:39.477251	Standard Perceptron Algorithm
+
+Training Accuracy = 71.32
+Development Accuracy = 76.06
+Test Accuracy = 74.03
+
+
+2018-10-28 20:57:40.047766	Number of examples = 10000
+2018-10-28 20:57:40.047766	Standard Perceptron Algorithm
+
+Training Accuracy = 73.28
+Development Accuracy = 70.76
+Test Accuracy = 72.07
+
+
+2018-10-28 20:57:40.936128	Number of examples = 15000
+2018-10-28 20:57:40.936128	Standard Perceptron Algorithm
+
+Training Accuracy = 73.66
+Development Accuracy = 82.82
+Test Accuracy = 81.35
+
+
+2018-10-28 20:57:42.154317	Number of examples = 20000
+2018-10-28 20:57:42.154317	Standard Perceptron Algorithm
+
+Training Accuracy = 74.45
+Development Accuracy = 76.39
+Test Accuracy = 74.13
+
+
+2018-10-28 20:57:43.748052	Number of examples = 25000
+2018-10-28 20:57:43.748052	Standard Perceptron Algorithm
+
+Training Accuracy = 74.83
+Development Accuracy = 66.71
+Test Accuracy = 67.51
+
+2018-10-28 20:57:45.568269	Plotting general learning curve for Perceptron
+2018-10-28 20:57:47.375876	Passsive Aggressive General Learning Algorithm
+
+2018-10-28 20:57:47.375876	Number of examples = 5000
+2018-10-28 20:57:47.375876	Passive Aggressive Algorithm
+
+Training Accuracy = 71.24
+Development Accuracy = 80.84
+Test Accuracy = 78.97
+
+
+2018-10-28 20:57:48.214422	Number of examples = 10000
+2018-10-28 20:57:48.214422	Passive Aggressive Algorithm
+
+Training Accuracy = 72.59
+Development Accuracy = 72.28
+Test Accuracy = 73.33
+
+
+2018-10-28 20:57:49.804808	Number of examples = 15000
+2018-10-28 20:57:49.804808	Passive Aggressive Algorithm
+
+Training Accuracy = 73.05
+Development Accuracy = 76.33
+Test Accuracy = 74.17
+
+
+2018-10-28 20:57:51.909927	Number of examples = 20000
+2018-10-28 20:57:51.909927	Passive Aggressive Algorithm
+
+Training Accuracy = 73.08
+Development Accuracy = 76.06
+Test Accuracy = 74.03
+
+
+2018-10-28 20:57:54.819219	Number of examples = 25000
+2018-10-28 20:57:54.819219	Passive Aggressive Algorithm
+
+Training Accuracy = 73.58
+Development Accuracy = 83.29
+Test Accuracy = 81.21
+
+2018-10-28 20:57:58.196334	Plotting general learning curve for Passive Aggressive
+
+Comparison of General Learning Curve for Perceptron and Passive Aggressive
+The general learning curve for train of both Perceptron and Passive Aggressive does not change by much when number of examples are increased for every iteration. In perceptron for development and testing data when the number of examples increases initially there is a rise and then drop in accuracy but for passive aggressive initially there is a drop in accuracy when number of iterations increase but afterwards there is a steady increase.
+
+2018-10-28 20:57:59.576974	Standard Perceptron Algorithm Varying Learning Rate
+2018-10-28 20:57:59.576974	Learning Rate = 1.00
+2018-10-28 20:57:59.985057	Learning Rate = 0.90
+2018-10-28 20:58:00.347022	Learning Rate = 0.80
+2018-10-28 20:58:00.704064	Learning Rate = 0.70
+2018-10-28 20:58:01.104129	Learning Rate = 0.60
+2018-10-28 20:58:01.497173	Plotting learning curve for Perceptron Varying Learning Rate
+2018-10-28 20:58:02.814613	Plotting accuracy curve for Perceptron  Varying Learning Rate Training Data
+2018-10-28 20:58:03.896989	Plotting accuracy curve for Perceptron  Varying Learning Rate Development Data
+2018-10-28 20:58:05.126756	Plotting accuracy curve for Perceptron  Varying Learning Rate Testing Data
+
+Training Accuracy = 75.86
+Development Accuracy = 69.76
+Test Accuracy = 70.54
+
+
+Observing Perceptron when training examples are shuffled
+The learning rate is reduced by 0.1 for every iteration. The online learning curve has almost the same number of mistakes for iteration 4 and 5 (almost converge). But the accuracy curve has increased for every iteration without any drop in accuracy when iterations increases. The accuracy has also increased when compared to standard perceptron.
+
+2018-10-28 20:58:06.354019	Standard Perceptron Algorithm Shuffle Examples
+2018-10-28 20:58:06.354019	Shuffle Dataframe
+2018-10-28 20:58:06.841313	Shuffle Dataframe
+2018-10-28 20:58:07.221323	Shuffle Dataframe
+2018-10-28 20:58:07.580778	Shuffle Dataframe
+2018-10-28 20:58:07.990364	Shuffle Dataframe
+2018-10-28 20:58:08.384986	Plotting learning curve for Perceptron Shuffling Examples
+2018-10-28 20:58:10.039884	Plotting accuracy curve for Perceptron Shuffling Examples Training Data
