@@ -1,4 +1,4 @@
-# Perceptron-Passive-Aggressive-SVM
+# Income Data Classification using Perceptron, Passive Aggressive and SVM
 
 ## Goal
 
