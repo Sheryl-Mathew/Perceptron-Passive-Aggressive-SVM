@@ -1,5 +1,9 @@
 # Perceptron-Passive-Aggressive-SVM
 
+## Goal
+
+To predict whether income exceeds $50K/yr based on census data using different classifiers 
+
 ## Implementation of the following classifiers
 
 1. Standard Perceptron
